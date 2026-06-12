@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(
+        180deg,
+        #fff8fb,
+        #ffeef5
+    );
+
+    display:flex;
+    justify-content:center;
+    padding:25px;
+}
+
+.app{
+    width:100%;
+    max-width:420px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    color:#b86d88;
+    font-size:2rem;
+}
+
+.subtitle{
+    color:#9a8791;
+    margin-top:8px;
+    font-size:0.95rem;
+}
+
+.savings-card{
+    background:white;
+    border-radius:28px;
+    padding:25px;
+    box-shadow:
+        0 10px 30px rgba(255,192,203,0.25);
+
+    text-align:center;
+}
+
+.label{
+    color:#a28d97;
+    font-size:0.95rem;
+}
+
+#total{
+    color:#c06d8b;
+    font-size:2.2rem;
+    margin-top:8px;
+    margin-bottom:25px;
+}
+
+.jar-container{
+    display:flex;
+    justify-content:center;
+    margin-bottom:25px;
+}
+
+.jar{
+    width:170px;
+    height:230px;
+
+    border:6px solid rgba(255,255,255,0.9);
+
+    border-radius:
+        35px 35px 45px 45px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        rgba(255,255,255,0.45);
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+        inset 0 0 20px rgba(255,255,255,0.8),
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
+.fill{
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:0%;
+
+    background:linear-gradient(
+        180deg,
+        #ffd8a8,
+        #f6b84f
+    );
+
+    transition:0.5s;
+}
+
+#addBtn{
+    border:none;
+
+    background:#f7b6cb;
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 6px 18px rgba(247,182,203,0.5);
+}
+
+#addBtn:active{
+    transform:scale(0.97);
+}
+
+.history{
+    margin-top:25px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    box-shadow:
+        0 10px 30px rgba(255,192,203,0.2);
+}
+
+.history h3{
+    color:#b86d88;
+    margin-bottom:12px;
+}
+
+#historyList{
+    color:#7f7077;
+}
